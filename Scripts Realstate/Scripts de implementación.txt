@@ -1,0 +1,17 @@
+Para la correcta creación de la base de datos e inserción de datos es importante ejecutar los script de la carpeta en el siguiente orden:
+
+1. DBrealstate_tables.sql: Crea la base de datos y tablas de las mismas (Incluye las de auditoría).
+
+2. DBrealstate_triggers.sql: Crea y prepara los disparadores en las correspondientes tablas para poder realizar acciones o enviar información a las tablas de auditoría.
+
+3. DBrealstate_functions.sql: Crea las funciones para poder complementar el funcionamiento de la base de datos o aclarar dudas sobre datos específicos.
+
+4. DBrealstate_procedures.sql: Crea procedimientos para poder simplificar lineas de codigo y realizar inserciónes de datos de forma acotada y simple.
+
+5. DBrealstate_inserts.sql: Utilizando los procedimientos inserta los datos en las tablas y los relaciona entre si.
+
+6. DBrealstate_views.sql: Utilizando Joins crea views de las relaciones de las tablas más importantes.
+
+7. DBrealstate_DCL_Users.sql: Crea los usuarios con sus respectivas restrincciones para realizar un eficiente control de la tabla.
+
+8. DBrealstate_backup.sql: Es el backup de la base de datos despúes de correr los archivos del 1 - 7. (Se puede ejecutar solo este archivo para obtener el mismo resultado)
